@@ -139,14 +139,6 @@ echo'<tr>
 
 
 </table>
-<script>
-</script>
-<script type="text/javascript">
-      $(document).ready(function(){
-          $('#checked1').click(function(){
-          window.location='uncheck.php';  
-          });
-      });
-  </script>
+
   </body>
 </html>
