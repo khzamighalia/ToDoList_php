@@ -39,6 +39,14 @@ require_once 'header.php';
     <div class='form-group'>
 
     <select name="catfield" class="form-control form-control-lg">
+    <?php
+$iddcat=$row2["id_category"];
+$cat_show_query = "SELECT * FROM category_table where id_category=$iddcat";
+$result3 = $dbcon -> query($cat_show_query);
+foreach ($result3 as $row3) {
+  echo '<option value="'.$row3["id_category"].'">'.$row3["name_category"].' </option>';
+}
+?>
 <?php
 $iddcat=$row2["id_category"];
 $cat_show_query = "SELECT * FROM category_table";

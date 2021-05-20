@@ -93,13 +93,14 @@ $idd=$row3["id_category"];
 $task_show_query = "SELECT * FROM task_table where id_category ='$idd' and checked=1";
 $result = $dbcon -> query($task_show_query);
 if($result->num_rows!=0){
-  foreach ($result as $row) {
-    $idtask= $row['id'];
-    echo'<thead class="bg-dark text-white text-center">
+  echo'<thead class="bg-dark text-white text-center">
     <th>'.$row3["name_category"].'</th>
   
   </tr>
 </thead>';
+  foreach ($result as $row) {
+    $idtask= $row['id'];
+    
 
 if($row["checked"]=='1'){
   $roww=$row['task_name'];
