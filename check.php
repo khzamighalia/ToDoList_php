@@ -6,7 +6,7 @@ $uncheck_query = "UPDATE task_table SET checked='1'  WHERE id=$id";
 
 $run_query = $dbcon->query($uncheck_query);
 
-$to = "eg.khzami@gmail.com";
+$to = "hbusinesssquare@gmail.com";
 $subject = "Todos : Une tâche a été marquée ";
 
 $message = "<b>Une tâche a été marquée.</b>";
